@@ -1,0 +1,62 @@
+:root {
+  font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  /* margin and max-width properties (and their values) holds everything in place i.e it will make html elements */
+  max-width: 1440px;
+  /* within them to stay within these boundaries especially when zooming in/out of a web browser */
+  background-color: #fff;
+}
+
+body {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.top-navbar {
+  background-color: #1ba39c;
+  font-family: "Architects Daughter", cursive;
+  color: #fff;
+}
+
+.top-navbar a:hover {
+  color: #000;
+}
+
+.logo-div {
+  display: flex;
+  font-size: 2rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../assets/images/pets.png");
+  padding-top: 3em;
+}
+
+.heading {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=styles.css.map */

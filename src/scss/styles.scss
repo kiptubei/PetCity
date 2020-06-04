@@ -1,0 +1,211 @@
+//color shceme
+$pets-green: rgba(27, 163, 156, 1);
+$white: #fff;
+$black: #000;
+$transparent-white:rgba(0,0,0,0.4);
+$transparent-pets-green:rgba(27, 163, 156,0.5);
+
+//box-sizing styling
+@mixin box-sizing($property) {
+  -webkit-box-sizing: $property;
+  -moz-box-sizing:$property;
+  -ms-box-sizing: $property;
+  box-sizing:$property;
+}
+
+
+:root {
+  font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+@include box-sizing(border-box);
+}
+
+html {
+  margin: 0 auto; /* margin and max-width properties (and their values) holds everything in place i.e it will make html elements */
+  max-width: 1440px; /* within them to stay within these boundaries especially when zooming in/out of a web browser */
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin:0;
+  font-family: 'Architects Daughter', cursive !important;
+}
+
+a {
+  text-decoration: none;
+  color:$white;
+}
+
+
+ul{
+  list-style: none;
+}
+
+.top-navbar {
+  background-color: $pets-green;
+  color:$white;
+  margin:0;
+}
+
+.top-navbar a:hover{
+  color:$black;
+}
+
+.logo-div {
+  display: flex;
+  font-size: 2rem;
+}
+
+
+.main-section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background:url("../assets/images/pets.png") no-repeat;
+  padding-top:2rem;
+  color:$white;
+  margin-top: 1rem;
+
+}
+
+.main-heading{
+  background-color: $pets-green;
+  text-align: center;
+  margin:1rem 0;
+}
+
+.main-form{
+  background-color: $transparent-white;
+  padding: 1rem 3rem;
+  margin:1rem 0;
+}
+
+.main-button{
+  margin: 2rem 0;
+}
+
+
+input[type=text], select {
+  width: 60%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: $pets-green;
+  padding: 12px 5px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color:$white;
+}
+
+input[type=submit]:hover {
+  background-color: $transparent-pets-green;
+}
+
+.works-section{
+  background-color: $pets-green;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding-top: 1rem;
+  color:$white;
+}
+
+.works-title{
+  grid-column-start:1;
+  grid-column-end:3;
+  color:$white;
+  text-align: center;
+}
+
+.works{
+  text-align: center;
+}
+
+.works>.material-icons {
+  font-size: 1.5rem;
+}
+
+.works-text{
+  padding: 0 3rem;
+}
+
+footer{
+  /*display:flex;
+  flex-direction: column;*/
+  color:$pets-green;
+  background-color: $white;
+}
+
+.top-footer{
+  justify-content: center;
+  margin-bottom:0;
+}
+
+.footer-social{
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  display:flex;
+  justify-content: center;
+  li{
+    padding: 0 1rem;
+  }
+
+  a{
+    color:$pets-green;
+  }
+}
+
+.bottom-footer{
+  color:$white;
+  background-color: $transparent-pets-green;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  input[type=text], select {
+    width: 100%;
+  }
+
+  input[type=submit] {
+    width: 100%;
+  }
+
+  .main-section{
+    padding-top: 1rem;
+  }
+
+  .works-section{
+    display:flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 1024px){
+
+}

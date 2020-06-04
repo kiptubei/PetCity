@@ -22,10 +22,10 @@
     <title>Pets City</title>
   </head>
   <body>
-    <div class="top-navbar row">
-      <div class="logo-div col-lg-3 col-md-4 col-sm-12 border-right border-bottom justify-content-center pt-2">
-        <i class="fa fa-paw mt-1"></i>
-        <p class="logo pl-2">Pets City</p>
+    <nav class="top-navbar row">
+      <div class="logo-div col-lg-3 col-md-4 col-sm-12 border-right justify-content-center pt-2">
+        <a href="index.html"><i class="fa fa-paw mt-1"></i></a>
+        <a href="index.html"><p class="logo pl-2">Pets City</p><a href="index.html">
       </div>
       <div class="col-lg-9 col-md-8 col sm-12">
         <ul class="menu-div mx-2 my-4 row justify-content-lg-end justify-content-md-around justify-content-sm-center">
@@ -43,17 +43,17 @@
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
     <main>
       <div class="main-section">
         <div class="main-heading"><h2>Our Pets Turn Houses Into Homes</h2></div>
         <div class="main-content">
-          <form class="main-form" action="">
-            <label for="/search.html">
+          <form class="main-form" action="search.html" target="_blank">
+            <label for="search-text">
               Search by Species
             </label>
             <br />
-            <input type="text" placeholder="Donkeys" />
+            <input type="text" id ="search-text" placeholder="Donkeys" />
             <input type="submit" value="Search" />
           </form>
         </div>

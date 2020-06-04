@@ -35,6 +35,13 @@ ul {
   list-style: none;
 }
 
+.navbar-fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+
 .top-navbar {
   background-color: #1ba39c;
   color: #fff;
@@ -55,9 +62,9 @@ ul {
   flex-direction: column;
   align-items: center;
   background: url("../assets/images/pets.png") no-repeat;
-  padding-top: 2rem;
+  padding-top: 6rem;
   color: #fff;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .main-heading {
@@ -67,7 +74,7 @@ ul {
 }
 
 .main-form {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1rem 3rem;
   margin: 1rem 0;
 }
@@ -76,7 +83,8 @@ ul {
   margin: 2rem 0;
 }
 
-input[type=text], select {
+input[type=text],
+select {
   width: 60%;
   padding: 12px 10px;
   margin: 8px 0;
@@ -131,10 +139,8 @@ input[type=submit]:hover {
 }
 
 footer {
-  /*display:flex;
-  flex-direction: column;*/
   color: #1ba39c;
-  background-color: #fff;
+  border-top: 1px solid #1ba39c;
 }
 
 .top-footer {
@@ -160,13 +166,51 @@ footer {
   background-color: rgba(27, 163, 156, 0.5);
   display: flex;
   justify-content: center;
-  padding-top: 0.5rem;
   margin-bottom: 0;
   font-size: 0.7rem;
 }
+.bottom-footer p {
+  margin: 0;
+}
+
+/* search html */
+.main-search {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 0 2rem;
+  margin-top: 4.5rem;
+}
+.main-search .search-result:nth-child(2n+1) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.search-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  color: #000;
+}
+
+.search-result {
+  display: flex;
+}
+.search-result li {
+  margin: 0.5rem 0;
+}
+.search-result a {
+  background-color: #1ba39c;
+  padding: 0.5rem;
+}
+.search-result img {
+  width: 50%;
+  height: 100%;
+}
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
-  input[type=text], select {
+  input[type=text],
+select {
     width: 100%;
   }
 
@@ -176,12 +220,23 @@ footer {
 
   .main-section {
     padding-top: 1rem;
+    margin-top: 2rem;
   }
 
   .works-section {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+  }
+
+  .main-search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .top-navbar {
+    border-bottom: 1px solid;
   }
 }
 

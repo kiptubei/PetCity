@@ -2,17 +2,16 @@
 $pets-green: rgba(27, 163, 156, 1);
 $white: #fff;
 $black: #000;
-$transparent-white:rgba(0,0,0,0.4);
-$transparent-pets-green:rgba(27, 163, 156,0.5);
+$transparent-white: rgba(0, 0, 0, 0.3);
+$transparent-pets-green: rgba(27, 163, 156, 0.5);
 
 //box-sizing styling
 @mixin box-sizing($property) {
   -webkit-box-sizing: $property;
-  -moz-box-sizing:$property;
+  -moz-box-sizing: $property;
   -ms-box-sizing: $property;
-  box-sizing:$property;
+  box-sizing: $property;
 }
-
 
 :root {
   font-size: 1rem;
@@ -21,7 +20,7 @@ $transparent-pets-green:rgba(27, 163, 156,0.5);
 *,
 *::before,
 *::after {
-@include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 html {
@@ -33,28 +32,34 @@ html {
 
 body {
   padding: 0;
-  margin:0;
-  font-family: 'Architects Daughter', cursive !important;
+  margin: 0;
+  font-family: "Architects Daughter", cursive !important;
 }
 
 a {
   text-decoration: none;
-  color:$white;
+  color: $white;
 }
 
-
-ul{
+ul {
   list-style: none;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
 }
 
 .top-navbar {
   background-color: $pets-green;
-  color:$white;
-  margin:0;
+  color: $white;
+  margin: 0;
 }
 
-.top-navbar a:hover{
-  color:$black;
+.top-navbar a:hover {
+  color: $black;
 }
 
 .logo-div {
@@ -62,36 +67,34 @@ ul{
   font-size: 2rem;
 }
 
-
-.main-section{
-  display:flex;
+.main-section {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background:url("../assets/images/pets.png") no-repeat;
-  padding-top:2rem;
-  color:$white;
-  margin-top: 1rem;
-
+  background: url("../assets/images/pets.png") no-repeat;
+  padding-top: 6rem;
+  color: $white;
+  margin-top: 4rem;
 }
 
-.main-heading{
+.main-heading {
   background-color: $pets-green;
   text-align: center;
-  margin:1rem 0;
+  margin: 1rem 0;
 }
 
-.main-form{
+.main-form {
   background-color: $transparent-white;
   padding: 1rem 3rem;
-  margin:1rem 0;
+  margin: 1rem 0;
 }
 
-.main-button{
+.main-button {
   margin: 2rem 0;
 }
 
-
-input[type=text], select {
+input[type="text"],
+select {
   width: 60%;
   padding: 12px 10px;
   margin: 8px 0;
@@ -101,7 +104,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 30%;
   background-color: $pets-green;
   padding: 12px 5px;
@@ -109,103 +112,153 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  color:$white;
+  color: $white;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: $transparent-pets-green;
 }
 
-.works-section{
+.works-section {
   background-color: $pets-green;
-  display:grid;
+  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-gap: 1rem;
   padding-top: 1rem;
-  color:$white;
+  color: $white;
 }
 
-.works-title{
-  grid-column-start:1;
-  grid-column-end:3;
-  color:$white;
+.works-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: $white;
   text-align: center;
 }
 
-.works{
+.works {
   text-align: center;
 }
 
-.works>.material-icons {
+.works > .material-icons {
   font-size: 1.5rem;
 }
 
-.works-text{
+.works-text {
   padding: 0 3rem;
 }
 
-footer{
-  /*display:flex;
-  flex-direction: column;*/
-  color:$pets-green;
-  background-color: $white;
+footer {
+  color: $pets-green;
+  border-top: 1px solid $pets-green;
 }
 
-.top-footer{
+.top-footer {
   justify-content: center;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
-.footer-social{
+.footer-social {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  display:flex;
+  display: flex;
   justify-content: center;
-  li{
+
+  li {
     padding: 0 1rem;
   }
 
-  a{
-    color:$pets-green;
+  a {
+    color: $pets-green;
   }
 }
 
-.bottom-footer{
-  color:$white;
+.bottom-footer {
+  color: $white;
   background-color: $transparent-pets-green;
   display: flex;
   justify-content: center;
-  padding-top: 0.5rem;
   margin-bottom: 0;
   font-size: 0.7rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* search html */
+.main-search {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 0 2rem;
+  margin-top: 4.5rem;
+
+  .search-result:nth-child(2n + 1) {
+    background-color: $transparent-white;
+  }
+}
+
+.search-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  color: $black;
+}
+
+.search-result {
+  display: flex;
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    background-color: $pets-green;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 50%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
-  input[type=text], select {
+  input[type="text"],
+  select {
     width: 100%;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 100%;
   }
 
-  .main-section{
+  .main-section {
     padding-top: 1rem;
+    margin-top: 2rem;
   }
 
-  .works-section{
-    display:flex;
+  .works-section {
+    display: flex;
     flex-direction: column;
     margin-top: 1rem;
   }
 
+  .main-search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .top-navbar {
+    border-bottom: 1px solid;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-
 }
 
-@media (min-width: 1024px){
-
+@media (min-width: 1024px) {
 }

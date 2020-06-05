@@ -32,7 +32,7 @@ Result Page
 ## Live Demo
 
 ​
-[Live Demo Link](https://rawcdn.githack.com/kiptubei/Bootstrap-Newsweek.com/1e63aa9608118d74003acdb1799b8f9c88d9242e/src/index.html)
+[Live Demo Link](https://rawcdn.githack.com/kiptubei/PetCity/f04599ec5433c148189596725dfcc6ec7279127e/src/index.html)
 ​
 ​
 

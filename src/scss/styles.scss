@@ -20,10 +20,6 @@ $navbar-background-color: $pets-primary;
 $main-text-color: $white;
 $main-background-color: $pets-primary;
 
-/* $footer-text-color: $pets-primary;
-$footer-background-color: $white;
-$footer-links-hover: $black; */
-
 $footer-text-color: $pets-primary;
 $footer-background-color: $white;
 $footer-links-hover: $black;
@@ -35,6 +31,9 @@ $footer-links-hover: $black;
   -ms-box-sizing: $property;
   box-sizing: $property;
 }
+
+$font: "Architects Daughter";
+$default-font: cursive;
 
 :root {
   font-size: 1rem;
@@ -55,7 +54,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Architects Daughter", cursive !important;
+  font-family: $font, $default-font !important;
 }
 
 a {
@@ -138,6 +137,7 @@ input[type="submit"] {
   color: $white;
 }
 
+input[type="button"]:hover,
 input[type="submit"]:hover {
   background-color: $transparent-pets-primary;
 }
@@ -294,6 +294,8 @@ footer {
   flex-direction: column;
 }
 
+
+
 //results html
 .result-main {
   margin-top: 6rem;
@@ -325,6 +327,10 @@ footer {
   border: 1px solid $transparent-grey;
   margin: 2rem;
   padding: 2rem;
+}
+
+.result-section-border {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .result-contacts {
@@ -425,7 +431,4 @@ footer {
   .footer-description {
     display: none;
   }
-}
-
-@media (min-width: 1024px) {
 }

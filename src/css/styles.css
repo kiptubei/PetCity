@@ -1,6 +1,3 @@
-/* $footer-text-color: $pets-primary;
-$footer-background-color: $white;
-$footer-links-hover: $black; */
 :root {
   font-size: 1rem;
 }
@@ -108,6 +105,7 @@ input[type=submit] {
   color: #fff;
 }
 
+input[type=button]:hover,
 input[type=submit]:hover {
   background-color: rgba(27, 163, 156, 0.5);
 }
@@ -284,6 +282,10 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 2rem;
   padding: 2rem;
+}
+
+.result-section-border {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .result-contacts {

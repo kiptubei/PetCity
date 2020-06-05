@@ -191,12 +191,16 @@ footer {
   margin-top: 4.5rem;
 }
 
+.search-filter-section {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 100px;
+}
+
 .search-filter {
   display: flex;
-  margin-top: 100px;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .search-filter input {

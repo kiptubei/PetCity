@@ -213,12 +213,16 @@ footer {
   margin-top: 4.5rem;
 }
 
+.search-filter-section {
+  background-color: $transparent-grey;
+  text-align: center;
+  margin-top: 100px;
+}
+
 .search-filter {
   display: flex;
-  margin-top: 100px;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: $transparent-grey;
 
   input {
     padding: 0.5rem;

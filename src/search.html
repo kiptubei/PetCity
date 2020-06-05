@@ -44,154 +44,150 @@
         </ul>
       </div>
     </nav>
-    <main class="main-search" >
-      <form class="search-filter" action="search.html">
-      <fieldset class="search-criteria">
-      <label for="species">Species:</label>
-      <select id="species" name="cars">
-        <option value="any">Any</option>
-        <option value="dogs">Dogs</option>
-        <option value="cats">Cats</option>
-        <option value="donkeys">Donkeys</option>
-        <option value="rabbits">Rabbits</option>
-        <option value="snakes">Snakes</option>
-      </select>
-      </fieldset>
-      <fieldset class="search-criteria">
-      <label for="gender">Gender:</label>
-      <select id="gender" name="cars">
-          <option value="any">Any</option>
-        <option value="volvo">Female</option>
-        <option value="saab">Male</option>
-      </select>
-      </fieldset>
-      <fieldset class="search-criteria">
-      <label for="county">County:</label>
-      <select id="county" name="cars">
-          <option value="any">Any</option>
-        <option value="volvo">Nairobi</option>
-        <option value="saab">Rift Valley</option>
-        <option value="fiat">Nyanza</option>
-        <option value="fiat">Coast</option>
-        <option value="audi">Any</option>
-      </select>
-      </fieldset>
-      <input type="submit" value="Search">
-      <input type="button" value="Clear">
-    </form>
-    <div class="search-results">
-      <div class="search-title">
-        <p>
-          Hooray! you have 8 search results
-          <i class="material-icons">
-            find_in_page
-          </i>
-        </p>
-      </div>
-      <div class="search-result result-1">
-        <img class="search-image" src="assets/images/donkey.jpeg" alt="donkey" />
-        <div class="search-text">
-          <ul>
-            <li>Name: Tubby</li>
-            <li>Species: Donkey</li>
-            <li>Breed: Pangea</li>
-            <li>Location: Limuru,Kenya</li>
-            <li><a href="results.html" target="_blank">View</a></li>
-          </ul>
+    <main class="main-search">
+      <section class="search-filter-section">
+        <h5>Filter results by Species,Gender and Location</h5>
+        <form class="search-filter" action="search.html">
+          <fieldset class="search-criteria">
+            <label for="species">Species:</label>
+            <select id="species" name="cars">
+              <option value="any">Any</option>
+              <option value="dogs">Dogs</option>
+              <option value="cats">Cats</option>
+              <option value="donkeys">Donkeys</option>
+              <option value="rabbits">Rabbits</option>
+              <option value="snakes">Snakes</option>
+            </select>
+          </fieldset>
+          <fieldset class="search-criteria">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="cars">
+              <option value="any">Any</option>
+              <option value="volvo">Female</option>
+              <option value="saab">Male</option>
+            </select>
+          </fieldset>
+          <fieldset class="search-criteria">
+            <label for="county">County:</label>
+            <select id="county" name="cars">
+              <option value="any">Any</option>
+              <option value="volvo">Nairobi</option>
+              <option value="saab">Rift Valley</option>
+              <option value="fiat">Nyanza</option>
+              <option value="fiat">Coast</option>
+              <option value="audi">Any</option>
+            </select>
+          </fieldset>
+          <input type="submit" value="Search" />
+          <input type="button" value="Clear" />
+        </form>
+      </section>
+      <div class="search-results">
+        <div class="search-title">
+          <p>
+            Hooray! you have 8 search results
+            <i class="material-icons">
+              find_in_page
+            </i>
+          </p>
         </div>
-      </div>
-      <div class="search-result result-2">
+        <div class="search-result result-1">
+          <img class="search-image" src="assets/images/donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Tubby</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Pangea</li>
+              <li>Location: Limuru,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-2">
           <img class="search-image" src="assets/images/mule.jpeg" alt="donkey" />
-        <div class="search-text">
-
-          <ul>
-            <li>Name: El Diablo</li>
-            <li>Species: Donkey</li>
-            <li>Breed: Mule</li>
-            <li>Location: Samburu,Kenya</li>
-            <li><a href="results.html" target="_blank">View</a></li>
-          </ul>
+          <div class="search-text">
+            <ul>
+              <li>Name: El Diablo</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Mule</li>
+              <li>Location: Samburu,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-3">
+          <img class="search-image" src="assets/images/miniature-donkeys.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Pixie and Dixie</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Miniature</li>
+              <li>Location: Nakuru,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-4">
+          <img class="search-image" src="assets/images/brown-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Billy</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Brown</li>
+              <li>Location: Kisumu,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-5">
+          <img class="search-image" src="assets/images/chinese-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Woli</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Arctic</li>
+              <li>Location: Nairobi,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-6">
+          <img class="search-image" src="assets/images/wooley-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Smoochy</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Mongolian</li>
+              <li>Location: Eldoret,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-7">
+          <img class="search-image" src="assets/images/grey-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Winky</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Grey</li>
+              <li>Location: Mt.Kenya,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-8">
+          <img class="search-image" src="assets/images/zebu-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: John</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Zebu</li>
+              <li>Location: Nakuru,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="search-result result-3">
-        <img class="search-image" src="assets/images/miniature-donkeys.jpeg" alt="donkey" />
-      <div class="search-text">
-
-        <ul>
-          <li>Name: Pixie and Dixie</li>
-          <li>Species: Donkey</li>
-          <li>Breed: Miniature</li>
-          <li>Location: Nakuru,Kenya</li>
-          <li><a href="results.html" target="_blank">View</a></li>
-        </ul>
-      </div>
-      </div>
-      <div class="search-result result-4">
-        <img class="search-image" src="assets/images/brown-donkey.jpeg" alt="donkey" />
-      <div class="search-text">
-
-        <ul>
-          <li>Name: Billy</li>
-          <li>Species: Donkey</li>
-          <li>Breed: Brown</li>
-          <li>Location: Kisumu,Kenya</li>
-          <li><a href="results.html" target="_blank">View</a></li>
-        </ul>
-      </div>
-      </div>
-      <div class="search-result result-5">
-        <img class="search-image" src="assets/images/chinese-donkey.jpeg" alt="donkey" />
-      <div class="search-text">
-
-        <ul>
-          <li>Name: Woli</li>
-          <li>Species: Donkey</li>
-          <li>Breed: Arctic</li>
-          <li>Location: Nairobi,Kenya</li>
-          <li><a href="results.html" target="_blank">View</a></li>
-        </ul>
-      </div>
-      </div>
-      <div class="search-result result-6">
-        <img class="search-image" src="assets/images/wooley-donkey.jpeg" alt="donkey" />
-      <div class="search-text">
-
-        <ul>
-          <li>Name: Smoochy</li>
-          <li>Species: Donkey</li>
-          <li>Breed: Mongolian</li>
-          <li>Location: Eldoret,Kenya</li>
-          <li><a href="results.html" target="_blank">View</a></li>
-        </ul>
-      </div>
-      </div>
-      <div class="search-result result-7">
-        <img class="search-image" src="assets/images/grey-donkey.jpeg" alt="donkey" />
-      <div class="search-text">
-
-        <ul>
-          <li>Name: Winky</li>
-          <li>Species: Donkey</li>
-          <li>Breed: Grey</li>
-          <li>Location: Mt.Kenya,Kenya</li>
-          <li><a href="results.html" target="_blank">View</a></li>
-        </ul>
-      </div>
-      </div>
-      <div class="search-result result-8">
-        <img class="search-image" src="assets/images/zebu-donkey.jpeg" alt="donkey" />
-      <div class="search-text">
-
-        <ul>
-          <li>Name: John</li>
-          <li>Species: Donkey</li>
-          <li>Breed: Zebu</li>
-          <li>Location: Nakuru,Kenya</li>
-          <li><a href="results.html" target="_blank">View</a></li>
-        </ul>
-      </div>
-      </div>
-    </div>
     </main>
     <footer>
       <div class="top-footer">
@@ -214,20 +210,25 @@
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i><span class="footer-description">FACEBOOK</span></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa fa-facebook-square"></i><span class="footer-description">FACEBOOK</span></a
+            >
           </li>
           <li>
-            <a href="https://twitter.com/"> <i class="fa fa-twitter fa-fw"></i><span class="footer-description">TWITTER</span></a>
+            <a href="https://twitter.com/">
+              <i class="fa fa-twitter fa-fw"></i><span class="footer-description">TWITTER</span></a
+            >
           </li>
           <li>
-            <a href="kiptubei@gmail.com"> <i class="fa fa-envelope fa-fw"></i><span class="footer-description">CONTACTS</span></a>
+            <a href="kiptubei@gmail.com">
+              <i class="fa fa-envelope fa-fw"></i><span class="footer-description">CONTACTS</span></a
+            >
           </li>
           <li>
             <a href="https://instagram.com">
               <i class="fa fa-instagram"></i><span class="footer-description">INSTAGRAM</span>
             </a>
           </li>
-
         </ul>
       </div>
       <div class="bottom-footer">

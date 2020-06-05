@@ -6,10 +6,12 @@ $red: rgba(240, 52, 52, 1);
 $transparent-green: rgba(27, 163, 156, 0.5);
 $transparent-red: rgba(240, 52, 52, 0.5);
 $transparent-grey: rgba(0, 0, 0, 0.2);
+
 $pets-primary: $green;
 $transparent-pets-primary: $transparent-green;
 $link-color: $white;
 $link-hoover-color: $black;
+
 $navbar-text-color: $white;
 $navbar-background-color: $pets-primary;
 $main-text-color: $white;
@@ -17,6 +19,7 @@ $main-background-color: $pets-primary;
 $footer-text-color: $pets-primary;
 $footer-background-color: $white;
 $footer-links-hover: $black;
+
 $font: "Architects Daughter";
 $default-font: cursive;
 
@@ -75,7 +78,6 @@ ul {
   padding-top: 6rem;
   color: $main-text-color;
   margin-top: 4rem;
-  background-color: $main-background-color;
 }
 
 .main-heading {

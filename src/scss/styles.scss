@@ -41,6 +41,10 @@ a {
   color: $white;
 }
 
+a:hover {
+  color: $black;
+}
+
 ul {
   list-style: none;
 }
@@ -58,9 +62,9 @@ ul {
   margin: 0;
 }
 
-.top-navbar a:hover {
+/* .top-navbar a:hover {
   color: $black;
-}
+} */
 
 .logo-div {
   display: flex;
@@ -171,6 +175,10 @@ footer {
   a {
     color: $pets-green;
   }
+
+  a:hover {
+    color: $black;
+  }
 }
 
 .bottom-footer {
@@ -184,6 +192,16 @@ footer {
   p {
     margin: 0;
   }
+}
+
+.footer-paw-logo {
+  border: 1px solid $pets-green;
+  border-radius: 50%;
+  font-size: 3rem;
+  position: relative;
+  bottom: 2rem;
+  background-color: $white;
+  margin-bottom: 0;
 }
 
 /* search html */
@@ -225,6 +243,65 @@ footer {
   }
 }
 
+//results html
+.result-main {
+  margin-top: 6rem;
+}
+
+.result-specs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.result-details {
+  display: flex;
+  justify-content: Center;
+  border: 1px solid black;
+}
+
+.detail-1 {
+  grid-area: 1/1/5/2;
+}
+
+.result-info {
+  color: $pets-green;
+}
+
+.result-section {
+  border: 1px solid $transparent-white;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.result-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.result-button {
+  background-color: $pets-green;
+  text-align: center;
+  padding: 1rem;
+}
+
+.result-contacts-list {
+  display: flex;
+
+  a {
+    color: $pets-green;
+  }
+}
+
+.result-map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 400px) and (max-width: 768px) {
   input[type="text"],
   select {
@@ -254,6 +331,34 @@ footer {
 
   .top-navbar {
     border-bottom: 1px solid;
+  }
+
+  .result-main {
+    margin-top: 150px;
+  }
+
+  .result-specs {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+  }
+
+  .result-contacts-list {
+    flex-direction: column;
+  }
+
+  .result-contacts {
+    align-items: center;
+  }
+
+  .result-button {
+    width: 100%;
+  }
+
+  .footer-description {
+    display: none;
   }
 }
 

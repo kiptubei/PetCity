@@ -22,97 +22,107 @@
     <title>Pets City</title>
   </head>
   <body>
-    <nav class="top-navbar row">
+    <nav class="top-navbar navbar-fixed row">
       <div class="logo-div col-lg-3 col-md-4 col-sm-12 border-right justify-content-center pt-2">
         <a href="index.html"><i class="fa fa-paw mt-1"></i></a>
-        <a href="index.html"><p class="logo pl-2">Pets City</p><a href="index.html">
+        <a href="index.html"><p class="logo pl-2">Pets City</p></a>
       </div>
       <div class="col-lg-9 col-md-8 col sm-12">
         <ul class="menu-div mx-2 my-4 row justify-content-lg-end justify-content-md-around justify-content-sm-center">
           <li class="mx-3">
-            <a href=""><i class="fa fa-paw pr-1"></i><span class="menu-description">PETS</span></a>
+            <a href="index.html"><i class="fa fa-paw pr-1"></i><span class="menu-description">PETS</span></a>
           </li>
           <li class="mx-3">
-            <a href=""><i class="fa fa-gratipay pr-1"></i><span class="menu-description">ABOUT</span></a>
+            <a href="index.html"><i class="fa fa-gratipay pr-1"></i><span class="menu-description">ABOUT</span></a>
           </li>
           <li class="mx-3">
-            <a href=""><i class="fa fa-book pr-1"></i><span class="menu-description">BLOG</span></a>
+            <a href="#"><i class="fa fa-book pr-1"></i><span class="menu-description">BLOG</span></a>
           </li>
           <li class="mx-3">
-            <a href=""><i class="fa fa-bars pr-1"></i><span class="menu-description">MORE</span></a>
+            <a href="#"><i class="fa fa-bars pr-1"></i><span class="menu-description">MORE</span></a>
           </li>
         </ul>
       </div>
     </nav>
-    <main>
-      <div class="main-section">
-        <div class="main-heading"><h2>Our Pets Turn Houses Into Homes</h2></div>
-        <div class="main-content">
-          <form class="main-form" action="search.html" target="_blank">
-            <label for="search-text">
-              Search by Species
-            </label>
-            <br />
-            <input type="text" id ="search-text" placeholder="Donkeys" />
-            <input type="submit" value="Search" />
-          </form>
+    <main class="result-main">
+      <div class="result-section">
+        <div class="result-title">
+          <h3><i class="fa fa-paw pr-1"></i>Pixie and Dixie</h3>
         </div>
-        <div>
-          <button class="main-button">
-            How It Works
-          </button>
+        <div class="result-specs">
+          <div class="result-details detail-1">
+            <img class="result-image" src="assets/images/miniature-donkeys.jpeg" alt="donkey" />
+          </div>
+          <div class="result-details detail-2">
+            <span class="result-info-title">Breed:</span><span class="result-info">Miniature:</span>
+          </div>
+          <div class="result-details detail-3">
+            <span class="result-info-title">Species:</span><span class="result-info">Donkey:</span>
+          </div>
+          <div class="result-details detail-4">
+            <span class="result-info-title">Gender:</span><span class="result-info">Male & Female:</span>
+          </div>
+          <div class="result-details detail-5">
+            <span class="result-info-title">Age:</span><span class="result-info"> &nbsp;1 Year</span>
+          </div>
+        </div>
+        <div class="result-contacts">
+          <a href="#" class="result-button"><i class="fa fa-envelope fa-fw"></i>Adopt</a>
+          <br />
+          <ul class="result-contacts-list">
+            <li>
+              <a href="#"
+                ><i class="material-icons">
+                  phone_in_talk
+                </i>
+                Telephone |</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="material-icons">
+                  enhanced_encryption
+                </i></a
+              >
+              Vaccinated: YES |
+            </li>
+            <li>
+              <a href="#"
+                ><i class="material-icons">
+                  directions_bus
+                </i></a
+              >Transport Permit: YES |
+            </li>
+            <li>
+              <a href="#"
+                ><i class="material-icons">
+                  filter_vintage
+                </i></a
+              >House Trained: NO |
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="works-section">
-        <div class="works-title">
-          <h3><i class="fa fa-paw pr-1"></i> Pet City Works in 4 Easy Steps</h3>
+      <div class="result-map-section">
+        <div class="result-map-title">
+          <h3>
+            <i class="material-icons">
+              explore </i
+            >MAP DIRECTIONS
+          </h3>
         </div>
-        <div class="works works-cube-1">1. <i class="material-icons"> find_in_page </i>
-           <br/><span class="works-text"> It's Easy! Just Enter the species of the animal you are interested in and voila! Not sure which pet you
-            want just view all them on the pets <i class="fa fa-paw"></i> link at the top of the page</span>
-        </div>
-        <div class="works works-cube-2">2.
-          <i class="material-icons">
-            add_location
-          </i><br>
-          <span class="works-text">Find where your pet is located on the map and get in touch with the owner or family.
-          Have a chat,tell us if your a good fit.</span>
-        </div>
-        <div class="works works-cube-3">3.
-          <i class="material-icons">
-            description
-          </i><br><span class="works-text">3. Once you have made your let us handle the paper work for adoption. Everything gets done within 7 working days.</span>
-        </div>
-        <div class="works works-cube-4">4.
-          <i class="material-icons">
-            beach_access
-          </i>
-          <br><span class="works-text">Relax</span>
+        <div class="result-map">
+          <img class="result-image" src="assets/images/chepkanga-map.jpeg" alt="map" />
         </div>
       </div>
     </main>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
     <footer>
       <div class="top-footer">
         <ul class="footer-social">
-          <li class="">
+          <li>
             <a href="index.html"><i class="fa fa-home"></i><span class="footer-description">HOME</span></a>
           </li>
-          <li class="">
+          <li>
             <a href="#"><i class="fa fa-gratipay"></i><span class="footer-description">ABOUT</span></a>
           </li>
           <li class="">

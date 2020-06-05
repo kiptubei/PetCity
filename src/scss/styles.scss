@@ -3,35 +3,20 @@ $white: #fff;
 $black: #000;
 $green: rgba(27, 163, 156, 1);
 $red: rgba(240, 52, 52, 1);
-
 $transparent-green: rgba(27, 163, 156, 0.5);
 $transparent-red: rgba(240, 52, 52, 0.5);
 $transparent-grey: rgba(0, 0, 0, 0.2);
-
 $pets-primary: $green;
 $transparent-pets-primary: $transparent-green;
-
 $link-color: $white;
 $link-hoover-color: $black;
-
 $navbar-text-color: $white;
 $navbar-background-color: $pets-primary;
-
 $main-text-color: $white;
 $main-background-color: $pets-primary;
-
 $footer-text-color: $pets-primary;
 $footer-background-color: $white;
 $footer-links-hover: $black;
-
-//box-sizing styling
-@mixin box-sizing($property) {
-  -webkit-box-sizing: $property;
-  -moz-box-sizing: $property;
-  -ms-box-sizing: $property;
-  box-sizing: $property;
-}
-
 $font: "Architects Daughter";
 $default-font: cursive;
 
@@ -39,15 +24,9 @@ $default-font: cursive;
   font-size: 1rem;
 }
 
-*,
-*::before,
-*::after {
-  @include box-sizing(border-box);
-}
-
 html {
-  margin: 0 auto; /* margin and max-width properties (and their values) holds everything in place i.e it will make html elements */
-  max-width: 1440px; /* within them to stay within these boundaries especially when zooming in/out of a web browser */
+  margin: 0 auto;
+  max-width: 1440px;
   overflow-x: hidden;
 }
 
@@ -293,8 +272,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-
 
 //results html
 .result-main {

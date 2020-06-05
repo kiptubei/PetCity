@@ -2,20 +2,9 @@
   font-size: 1rem;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 html {
   margin: 0 auto;
-  /* margin and max-width properties (and their values) holds everything in place i.e it will make html elements */
   max-width: 1440px;
-  /* within them to stay within these boundaries especially when zooming in/out of a web browser */
   overflow-x: hidden;
 }
 
@@ -83,7 +72,7 @@ ul {
   margin: 2rem 0;
 }
 
-input[type=text],
+input[type="text"],
 select {
   width: 60%;
   padding: 12px 10px;
@@ -94,7 +83,7 @@ select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 30%;
   background-color: #1ba39c;
   padding: 12px 5px;
@@ -105,8 +94,8 @@ input[type=submit] {
   color: #fff;
 }
 
-input[type=button]:hover,
-input[type=submit]:hover {
+input[type="button"]:hover,
+input[type="submit"]:hover {
   background-color: rgba(27, 163, 156, 0.5);
 }
 
@@ -159,13 +148,16 @@ footer {
   margin-right: 3rem;
   justify-content: center;
 }
+
 .footer-social li {
   padding: 0 1rem;
   margin: 0;
 }
+
 .footer-social a {
   color: #1ba39c;
 }
+
 .footer-social a:hover {
   color: #000;
 }
@@ -178,6 +170,7 @@ footer {
   margin-bottom: 0;
   font-size: 0.7rem;
 }
+
 .bottom-footer p {
   margin: 0;
 }
@@ -204,11 +197,13 @@ footer {
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .search-filter input {
   padding: 0.5rem;
   margin: 1.5rem;
   width: 10%;
 }
+
 .search-filter select {
   width: auto;
   margin-right: 1rem;
@@ -221,7 +216,8 @@ footer {
   grid-gap: 1rem;
   margin: 0 2rem;
 }
-.search-results .search-result:nth-child(2n+1) {
+
+.search-results .search-result:nth-child(2n + 1) {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -235,13 +231,16 @@ footer {
 .search-result {
   display: flex;
 }
+
 .search-result li {
   margin: 0.5rem 0;
 }
+
 .search-result a {
   background-color: #1ba39c;
   padding: 0.5rem;
 }
+
 .search-result img {
   width: 50%;
   height: 100%;
@@ -303,6 +302,7 @@ footer {
 .result-contacts-list {
   display: flex;
 }
+
 .result-contacts-list a {
   color: #1ba39c;
 }
@@ -318,12 +318,12 @@ footer {
     border-bottom: 1px solid #fff;
   }
 
-  input[type=text],
-select {
+  input[type="text"],
+  select {
     width: 100%;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 100%;
   }
 
@@ -380,6 +380,7 @@ select {
     display: none;
   }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .footer-description {
     display: none;

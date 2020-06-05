@@ -239,7 +239,7 @@ footer {
   grid-gap: 1rem;
   margin: 0 2rem;
 
-  .search-result:nth-child(2n + 1) {
+  .search-result:nth-child(2n+1) {
     background-color: $transparent-grey;
   }
 }

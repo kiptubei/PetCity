@@ -25,7 +25,7 @@
     <nav class="top-navbar navbar-fixed row">
       <div class="logo-div col-lg-3 col-md-4 col-sm-12 border-right justify-content-center pt-2">
         <a href="index.html"><i class="fa fa-paw mt-1"></i></a>
-        <a href="index.html"><p class="logo pl-2">Pets City</p><a href="index.html">
+        <a href="index.html"><p class="logo pl-2">Pets City</p></a>
       </div>
       <div class="col-lg-9 col-md-8 col sm-12">
         <ul class="menu-div mx-2 my-4 row justify-content-lg-end justify-content-md-around justify-content-sm-center">
@@ -44,7 +44,42 @@
         </ul>
       </div>
     </nav>
-    <main class="main-search">
+    <main class="main-search" >
+      <form class="search-filter" action="/action_page.php">
+      <fieldset class="search-criteria">
+      <label for="species">Species:</label>
+      <select id="species" name="cars">
+        <option value="any">Any</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="donkeys">Donkeys</option>
+        <option value="rabbits">Rabbits</option>
+        <option value="snakes">Snakes</option>
+      </select>
+      </fieldset>
+      <fieldset class="search-criteria">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="cars">
+          <option value="any">Any</option>
+        <option value="volvo">Female</option>
+        <option value="saab">Male</option>
+      </select>
+      </fieldset>
+      <fieldset class="search-criteria">
+      <label for="county">County:</label>
+      <select id="county" name="cars">
+          <option value="any">Any</option>
+        <option value="volvo">Nairobi</option>
+        <option value="saab">Rift Valley</option>
+        <option value="fiat">Nyanza</option>
+        <option value="fiat">Coast</option>
+        <option value="audi">Any</option>
+      </select>
+      </fieldset>
+      <input type="submit" value="Search">
+      <input type="submit" value="Clear">
+    </form>
+    <div class="search-results">
       <div class="search-title">
         <p>
           Hooray! you have 8 search results
@@ -156,6 +191,7 @@
         </ul>
       </div>
       </div>
+    </div>
     </main>
     <footer>
       <div class="top-footer">

@@ -1,9 +1,32 @@
 //color shceme
-$pets-green: rgba(27, 163, 156, 1);
 $white: #fff;
 $black: #000;
-$transparent-white: rgba(0, 0, 0, 0.3);
-$transparent-pets-green: rgba(27, 163, 156, 0.5);
+$green: rgba(27, 163, 156, 1);
+$red: rgba(240, 52, 52, 1);
+
+$transparent-green: rgba(27, 163, 156, 0.5);
+$transparent-red: rgba(240, 52, 52, 0.5);
+$transparent-grey: rgba(0, 0, 0, 0.2);
+
+$pets-primary: $green;
+$transparent-pets-primary: $transparent-green;
+
+$link-color: $white;
+$link-hoover-color: $black;
+
+$navbar-text-color: $white;
+$navbar-background-color: $pets-primary;
+
+$main-text-color: $white;
+$main-background-color: $pets-primary;
+
+/* $footer-text-color: $pets-primary;
+$footer-background-color: $white;
+$footer-links-hover: $black; */
+
+$footer-text-color: $pets-primary;
+$footer-background-color: $white;
+$footer-links-hover: $black;
 
 //box-sizing styling
 @mixin box-sizing($property) {
@@ -26,7 +49,6 @@ $transparent-pets-green: rgba(27, 163, 156, 0.5);
 html {
   margin: 0 auto; /* margin and max-width properties (and their values) holds everything in place i.e it will make html elements */
   max-width: 1440px; /* within them to stay within these boundaries especially when zooming in/out of a web browser */
-  background-color: $white;
   overflow-x: hidden;
 }
 
@@ -38,11 +60,11 @@ body {
 
 a {
   text-decoration: none;
-  color: $white;
+  color: $link-color;
 }
 
 a:hover {
-  color: $black;
+  color: $link-hoover-color;
 }
 
 ul {
@@ -57,14 +79,10 @@ ul {
 }
 
 .top-navbar {
-  background-color: $pets-green;
-  color: $white;
+  color: $navbar-text-color;
+  background-color: $navbar-background-color;
   margin: 0;
 }
-
-/* .top-navbar a:hover {
-  color: $black;
-} */
 
 .logo-div {
   display: flex;
@@ -77,18 +95,19 @@ ul {
   align-items: center;
   background: url("../assets/images/pets.png") no-repeat;
   padding-top: 6rem;
-  color: $white;
+  color: $main-text-color;
   margin-top: 4rem;
+  background-color: $main-background-color;
 }
 
 .main-heading {
-  background-color: $pets-green;
   text-align: center;
+  background-color: $main-background-color;
   margin: 1rem 0;
 }
 
 .main-form {
-  background-color: $transparent-white;
+  background-color: $transparent-grey;
   padding: 1rem 3rem;
   margin: 1rem 0;
 }
@@ -110,7 +129,7 @@ select {
 
 input[type="submit"] {
   width: 30%;
-  background-color: $pets-green;
+  background-color: $pets-primary;
   padding: 12px 5px;
   margin: 8px 0;
   border: none;
@@ -120,23 +139,23 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: $transparent-pets-green;
+  background-color: $transparent-pets-primary;
 }
 
 .works-section {
-  background-color: $pets-green;
+  background-color: $main-background-color;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-gap: 1rem;
   padding-top: 1rem;
-  color: $white;
+  color: $main-text-color;
 }
 
 .works-title {
   grid-column-start: 1;
   grid-column-end: 3;
-  color: $white;
+  color: $main-text-color;
   text-align: center;
 }
 
@@ -153,8 +172,9 @@ input[type="submit"]:hover {
 }
 
 footer {
-  color: $pets-green;
-  border-top: 1px solid $pets-green;
+  color: $footer-text-color;
+  border-top: 1px solid $footer-text-color;
+  background-color: $footer-background-color;
 }
 
 .top-footer {
@@ -165,15 +185,19 @@ footer {
 .footer-social {
   margin-top: 0.5rem;
   margin-bottom: 0;
+  padding-bottom: 0;
   display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
   justify-content: center;
 
   li {
     padding: 0 1rem;
+    margin: 0;
   }
 
   a {
-    color: $pets-green;
+    color: $footer-text-color;
   }
 
   a:hover {
@@ -183,7 +207,7 @@ footer {
 
 .bottom-footer {
   color: $white;
-  background-color: $transparent-pets-green;
+  background-color: $transparent-pets-primary;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
@@ -195,26 +219,48 @@ footer {
 }
 
 .footer-paw-logo {
-  border: 1px solid $pets-green;
+  border: 1px solid;
   border-radius: 50%;
   font-size: 3rem;
   position: relative;
   bottom: 2rem;
-  background-color: $white;
+  background-color: $footer-background-color;
   margin-bottom: 0;
 }
 
 /* search html */
 .main-search {
+  margin-top: 4.5rem;
+}
+
+.search-filter {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: $transparent-grey;
+
+  input {
+    padding: 0.5rem;
+    margin: 1.5rem;
+    width: 10%;
+  }
+
+  select {
+    width: auto;
+    margin-right: 1rem;
+  }
+}
+
+.search-results {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
   margin: 0 2rem;
-  margin-top: 4.5rem;
 
   .search-result:nth-child(2n + 1) {
-    background-color: $transparent-white;
+    background-color: $transparent-grey;
   }
 }
 
@@ -233,7 +279,7 @@ footer {
   }
 
   a {
-    background-color: $pets-green;
+    background-color: $pets-primary;
     padding: 0.5rem;
   }
 
@@ -241,6 +287,11 @@ footer {
     width: 50%;
     height: 100%;
   }
+}
+
+.search-criteria {
+  display: flex;
+  flex-direction: column;
 }
 
 //results html
@@ -267,11 +318,11 @@ footer {
 }
 
 .result-info {
-  color: $pets-green;
+  color: $pets-primary;
 }
 
 .result-section {
-  border: 1px solid $transparent-white;
+  border: 1px solid $transparent-grey;
   margin: 2rem;
   padding: 2rem;
 }
@@ -283,7 +334,7 @@ footer {
 }
 
 .result-button {
-  background-color: $pets-green;
+  background-color: $pets-primary;
   text-align: center;
   padding: 1rem;
 }
@@ -292,7 +343,7 @@ footer {
   display: flex;
 
   a {
-    color: $pets-green;
+    color: $pets-primary;
   }
 }
 
@@ -303,6 +354,10 @@ footer {
 }
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
+  .logo-div {
+    border-bottom: 1px solid $white;
+  }
+
   input[type="text"],
   select {
     width: 100%;
@@ -324,9 +379,13 @@ footer {
   }
 
   .main-search {
+    margin-top: 150px;
+  }
+
+  .search-results {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   .top-navbar {
@@ -363,6 +422,9 @@ footer {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .footer-description {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {

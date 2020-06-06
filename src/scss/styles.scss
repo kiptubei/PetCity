@@ -7,7 +7,7 @@ $transparent-green: rgba(27, 163, 156, 0.5);
 $transparent-red: rgba(240, 52, 52, 0.5);
 $transparent-grey: rgba(0, 0, 0, 0.2);
 
-$pets-primary: $green;
+$pets-primary: $red;
 $transparent-pets-primary: $transparent-green;
 $link-color: $white;
 $link-hoover-color: $black;
@@ -16,12 +16,13 @@ $navbar-text-color: $white;
 $navbar-background-color: $pets-primary;
 $main-text-color: $white;
 $main-background-color: $pets-primary;
-$footer-text-color: $pets-primary;
-$footer-background-color: $white;
-$footer-links-hover: $black;
+$footer-text-color: $white;
+$footer-background-color: $black;
+$footer-links-hover: $white;
+$footer-link-color: $red;
 
-$font: "Architects Daughter";
-$default-font: cursive;
+$font: "Didact Gothic";
+$default-font: sans-serif;
 
 :root {
   font-size: 1rem;
@@ -157,6 +158,16 @@ footer {
   color: $footer-text-color;
   border-top: 1px solid $footer-text-color;
   background-color: $footer-background-color;
+
+  a {
+    color: $footer-link-color;
+  }
+
+  a:hover {
+    color: $footer-links-hover;
+  }
+
+  padding-top: 3rem;
 }
 
 .top-footer {
@@ -172,6 +183,8 @@ footer {
   margin-left: 3rem;
   margin-right: 3rem;
   justify-content: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 
   li {
     padding: 0 1rem;
@@ -181,22 +194,43 @@ footer {
   a {
     color: $footer-text-color;
   }
+}
 
-  a:hover {
-    color: $black;
+.middle-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $footer-background-color;
+  margin-top: 1rem;
+
+  .middle-footer-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .bottom-footer {
   color: $white;
-  background-color: $transparent-pets-primary;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
+  background-color: rgba(40,40, 40, 1);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   font-size: 0.7rem;
 
-  p {
-    margin: 0;
+  .bottom-footer-credits {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bottom-footer-social ul {
+    display: flex;
+
+    li {
+      padding-right: 1rem;
+    }
+
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -205,7 +239,7 @@ footer {
   border-radius: 50%;
   font-size: 3rem;
   position: relative;
-  bottom: 2rem;
+  top: -20px;
   background-color: $footer-background-color;
   margin-bottom: 0;
 }
@@ -245,7 +279,7 @@ footer {
   grid-gap: 1rem;
   margin: 0 2rem;
 
-  .search-result:nth-child(2n+1) {
+  .search-result:nth-child(2n + 1) {
     background-color: $transparent-grey;
   }
 }

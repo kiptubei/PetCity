@@ -1,2 +1,81 @@
-# PetCity
-Online Pet Store and Catalogue
+# Pet City -Online Pet Store and Directory- HTML/CSS Capstone Project
+
+This is an HTML/CSS Capsonstone Solo Project. It is an online Pet Directory that
+allows people to search for and adopt animal companions within kenya.
+
+The project design idea is based on [PataShule](https://www.behance.net/gallery/25563385/PatashuleKE)  site by [Mathew Njuguna and others on Behance](https://www.behance.net/mathewnjuguna)
+
+Main Page
+> ​
+> ![screenshot](/src/assets/images/Screenshot.png)
+> ​
+
+Search Page
+> ​
+> ![screenshot](/src/assets/images/Screenshot-search.png)
+>
+
+Result Page
+> ​
+> ![screenshot](/src/assets/images/Screenshot-result.png)
+>  ​
+
+## Built With
+
+- HTML
+- CSS
+- Fontawesome
+- Bootstrap
+- SASS/SCSS
+  ​
+
+## Live Demo
+
+​
+[Live Demo Link](https://rawcdn.githack.com/kiptubei/PetCity/73ad40321df419f2d9fec5c9690a2f5bc2af67cf/src/index.html)
+​
+​
+
+## Getting Started
+
+​
+**Clone the repo on your system, find the index.html file and open with your browser**
+​
+​
+
+## Authors
+
+​#### 👤 **Mark James Kiptubei**
+
+​
+
+- Github: [@kiptubei](https://github.com/kiptubei)
+- Linkedin: [mark](https://www.linkedin.com/in/mark-james-k-aa875829/)
+
+## �� Contributing
+
+​
+Contributions, issues and feature requests are welcome!
+​
+Feel free to check the [issues page](https://github.com/kiptubei/PetCity/issues).
+​
+
+## Show your support
+
+​
+Give a ⭐️ if you like this project!
+​
+
+## Acknowledgments
+
+- Fontawesome
+- Our Stand up teams
+- Microverse TSE
+- Mathew Njuguna
+- Sam Achola
+- Kevin Mutua
+
+## �� License
+
+​
+This project is [MIT](lic.url) licensed.

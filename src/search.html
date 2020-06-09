@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@900&family=Architects+Daughter&family=Didact+Gothic&display=swap"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Pets City</title>
+  </head>
+  <body>
+    <nav class="top-navbar navbar-fixed row">
+      <div class="logo-div col-lg-3 col-md-4 col-sm-12 border-right justify-content-center pt-2">
+        <a href="index.html"><i class="fa fa-paw mt-1"></i></a>
+        <a href="index.html"><h1 class="logo pl-2">Pets City</h1></a>
+      </div>
+      <div class="col-lg-9 col-md-8 col-sm-12">
+        <ul class="menu-div mx-2 my-4 row justify-content-lg-end justify-content-md-around justify-content-sm-center">
+          <li class="mx-3">
+            <a href="index.html"><i class="fa fa-paw pr-1"></i><span class="menu-description">PETS</span></a>
+          </li>
+          <li class="mx-3">
+            <a href="index.html"><i class="fa fa-gratipay pr-1"></i><span class="menu-description">ABOUT</span></a>
+          </li>
+          <li class="mx-3">
+            <a href="#"><i class="fa fa-book pr-1"></i><span class="menu-description">BLOG</span></a>
+          </li>
+          <li class="mx-3">
+            <a href="#"><i class="fa fa-bars pr-1"></i><span class="menu-description">MORE</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-search">
+      <section class="search-filter-section">
+        <h5>Filter results by Species,Gender and Location</h5>
+        <form class="search-filter" action="search.html">
+          <fieldset class="search-criteria">
+            <label for="species">Species:</label>
+            <select id="species" name="cars">
+              <option value="any">Any</option>
+              <option value="dogs">Dogs</option>
+              <option value="cats">Cats</option>
+              <option value="donkeys">Donkeys</option>
+              <option value="rabbits">Rabbits</option>
+              <option value="snakes">Snakes</option>
+            </select>
+          </fieldset>
+          <fieldset class="search-criteria">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="cars">
+              <option value="any">Any</option>
+              <option value="volvo">Female</option>
+              <option value="saab">Male</option>
+            </select>
+          </fieldset>
+          <fieldset class="search-criteria">
+            <label for="county">County:</label>
+            <select id="county" name="cars">
+              <option value="any">Any</option>
+              <option value="volvo">Nairobi</option>
+              <option value="saab">Rift Valley</option>
+              <option value="fiat">Nyanza</option>
+              <option value="fiat">Coast</option>
+              <option value="audi">Any</option>
+            </select>
+          </fieldset>
+          <input type="submit" value="Search" />
+          <input type="button" value="Clear" />
+        </form>
+      </section>
+      <div class="search-results">
+        <div class="search-title">
+          <p>
+            Hooray! you have 8 search results
+            <i class="material-icons">
+              find_in_page
+            </i>
+          </p>
+        </div>
+        <div class="search-result result-1">
+          <img class="search-image" src="assets/images/donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Tubby</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Pangea</li>
+              <li>Location: Limuru,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-2">
+          <img class="search-image" src="assets/images/mule.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: El Diablo</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Mule</li>
+              <li>Location: Samburu,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-3">
+          <img class="search-image" src="assets/images/miniature-donkeys.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Pixie and Dixie</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Miniature</li>
+              <li>Location: Nakuru,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-4">
+          <img class="search-image" src="assets/images/brown-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Billy</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Brown</li>
+              <li>Location: Kisumu,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-5">
+          <img class="search-image" src="assets/images/chinese-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Woli</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Arctic</li>
+              <li>Location: Nairobi,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-6">
+          <img class="search-image" src="assets/images/wooley-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Smoochy</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Mongolian</li>
+              <li>Location: Eldoret,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-7">
+          <img class="search-image" src="assets/images/grey-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: Winky</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Grey</li>
+              <li>Location: Mt.Kenya,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result result-8">
+          <img class="search-image" src="assets/images/zebu-donkey.jpeg" alt="donkey" />
+          <div class="search-text">
+            <ul>
+              <li>Name: John</li>
+              <li>Species: Donkey</li>
+              <li>Breed: Zebu</li>
+              <li>Location: Nakuru,Kenya</li>
+              <li><a href="results.html" target="_blank">View</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <ul class="footer-social">
+          <li class="">
+            <a href="index.html"><i class="fa fa-home"></i><span class="footer-description">HOME</span></a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-gratipay"></i><span class="footer-description">ABOUT</span></a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-book"></i><span class="footer-description">BLOG</span></a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-bars"></i><span class="footer-description">MORE</span></a>
+          </li>
+          <li class="footer-paw-logo">
+            <a href="index.html">
+              <i class="fa fa-paw"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa fa-facebook-square"></i><span class="footer-description">FACEBOOK</span></a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <i class="fa fa-twitter"></i><span class="footer-description">TWITTER</span></a
+            >
+          </li>
+          <li>
+            <a href="kiptubei@gmail.com">
+              <i class="fa fa-envelope"></i><span class="footer-description">CONTACTS</span></a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <i class="fa fa-instagram"></i><span class="footer-description">INSTAGRAM</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="middle-footer">
+        <div class="middle-footer-sub">
+          <h5>SUBSCRIBE</h5>
+          <form class="subscribe-form" action="#" target="_blank">
+            <input type="text" id="subscribe-text" placeholder="name@email.com" />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+        <div class="middle-footer-sub">
+          <h5>CONTACT</h5>
+          <span>You can always reach us on:</span>
+          <a href="mailto:contacts@petscity.com">contacts>@petscity.com</a>
+        </div>
+        <div class="middle-footer-sub">
+          <h5>ABOUT</h5>
+          <span
+            >There is alot to know about us but if oyu are really interested please just clink on the link.
+            <a href="#">Learn more</a></span
+          >
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="bottom-footer-social">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        <div class="bottom-footer-credits">
+          <p>
+            &copy; 2020 Mark James Kiptubei Made with ♥ in Eldoret, Kenya.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
